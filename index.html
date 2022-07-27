@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Project</title>
+    <link rel="stylesheet" href="ccs/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="#">Print<span style="color: #56876D;">iva</span></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="images/hamburger-menu.svg" alt="Menu">
+
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/x-btn.svg" alt="Close Navigation">
+                <ul class="primary-nav">
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Get Started</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li class="try-now-cta"><a href="#">Try Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+    <section class="hero">
+        <div class="hero-container">
+            <div class="left-col">
+                <h1 class="header">Create Your Own Brand</h1>
+                <p class="subheading">Start today and make your dreams come true.</p>
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta">Try Now</a>
+                    <a href="#" class="secondary-cta">Sign Up</a>
+                </div>
+            </div>
+            
+            <img src="images/hero-img.png" class="hero-img" alt="Clothing Image">
+            
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="features-container">
+            <div class="column">
+            <img src="images/printing-press.png" alt="Printing Press">
+            </div>
+            <div class="column column-list">
+            <div class="features-list">
+                <h3>Worldwide shipping</h3>
+                <p>We’ll ship print-on-demand products to your customers from our worldwide fulfilment centres</p>
+            </div>
+                
+            <div class="features-list">
+                <h3>Automatic fulfilment</h3>
+                <p>Connect your store to Printiva and we’ll fulfill your orders automatically</p>
+            </div>
+
+            <div class="features-list">
+               <h3>Responsible production</h3>
+                <p>Save resources and avoid leftover stock by selling made-to-order products</p>
+            </div>
+
+            <div class="features-list">
+               <h3>Custom branding</h3>
+                <p>Create an unboxing experience for your customers with customized inside labels, packing slips, and branded packaging inserts</p>
+            </div>  
+        </div>  
+    </section>
+
+    <section class="testimonials-section">
+        <div class="testimonials-container">
+
+            <div class="testimonials-cta">
+                <h3>See what our customers are saying. </h3>
+                <p>Our main priority is our customers so we are always here to help if there ever is an issue. </p>
+                <div class="testimonials-btn">
+                    <a href="#" class="testimonials-cta-btn">Contact</a>
+                </div>
+            </div>
+            <ul class="testimonials-quotes">
+                <li>
+                    <img  src="images/person-1.png" alt="Jane">
+                    <blockquote>The t-shirts are really top quality. My fans love them, and the sample order I got myself 5 years ago still looks good.</blockquote>
+                    <cite>Jane</cite>
+                </li>
+            </ul>
+            <ul class="testimonials-quotes personimg">
+                <li>
+                    <img src="images/person-2.png" alt="Owen">
+                    <blockquote>I mostly sell t-shirts, but my favorite items to sell are the sweatshirts. They're soft and comfy, and my customers can't get enough of them!</blockquote>
+                    <cite>Owen</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="final-cta">
+        <div>
+            <h3>
+                Ready to start with Printiva?
+            </h3>
+            <a href="#" class="final-cta-btn">Try now</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+            <div>
+                <p>Copyright &copy;2022 Printiva</p>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script>
+        const mobileBtn = document.getElementById('mobile-cta');
+        nav = document.querySelector('nav');
+        mobileBtnExit = document.getElementById('mobile-exit');
+
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        } )
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        } )
+
+    </script>
+    
+</body>
+</html>
